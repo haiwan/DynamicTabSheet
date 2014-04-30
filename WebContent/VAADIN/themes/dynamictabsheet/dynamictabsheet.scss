@@ -1,0 +1,56 @@
+/* This contains all of your theme.*/
+/* If somebody wants to extend the theme she will include this mixin. */
+@mixin dynamictabsheet {
+  /* Insert your theme rules here */
+  .dynamictabsheet{
+    .add-tab-btn {
+      font-size: 30px;
+      overflow: hidden;
+      cursor: pointer;
+      float: left;
+      width: 20px;
+      height: 30px;
+  	  font-weight: 100;
+  	  margin-left: 10px;
+    }
+  
+    .add-tab-btn:hover{
+  	  color: #A9A9A9;
+  	  font-weight: 100;
+    }
+  
+    .v-tabsheet-tabitem .v-caption-closable{
+  	  max-width: 90px;
+  	  padding-left: 0px;
+  	  .v-tabsheet-caption-close{
+  		padding-left: 0;
+  		background-image: none;
+  		text-indent: 0;
+  		font-weight: 100;
+  		height: 16px;
+  		width: 16px;
+  		border-radius: 8px;
+  		-moz-border-radius: 8px;
+  		-webkit-border-radius: 8px;
+  		.v-tooltip{
+  			display:none;
+  		}
+  	  }
+  	  .v-tabsheet-caption-close:hover{
+  		background-color: #CD5C5C;
+  		color: white;
+  		font-weight: 100;
+  	  }
+  	  .v-captiontext{
+  		max-width: 40px;
+  		text-overflow: ellipsis;
+  		overflow: hidden;
+  		padding-left: 20px;
+  		padding-right: 10px;
+  		display: inline-block;
+  		white-space:nowrap;
+  		word-wrap: normal;
+  	  }
+    }
+  }
+}
